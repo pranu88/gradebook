@@ -5,8 +5,8 @@ import { useState } from "react";
 function App() {
 
   const possibleCandidates = [
-    { name: "Superman", gpa: "4.0", cohort: "Metropolis" },
-    { name: "Batman", gpa: "4.0", cohort: "Gotham" },
+    { name: "Superman", gpa: "4", cohort: "Metropolis" },
+    { name: "Batman", gpa: "4", cohort: "Gotham" },
     // { name: "WonderWoman", gpa: "4.0", cohort: "Athens" },
     // { name: "Mario", gpa: "4.0", cohort: "Italy" },
     // { name: "Luigi", gpa: "4.0", cohort: "Brooklyn" },
@@ -55,6 +55,14 @@ console.log(possibleCandidates)
 
   return (
     <div className="App">
+        <h1>STUDENT GRADE BOOK</h1>
+        <div style={{ display: "flex", justifyContent: "space-evenly" ,color:"white"}}>
+          <h3>NAME</h3>
+          <h3>GPA</h3>
+          <h3>COHORT</h3>
+        </div>
+
+ 
        {star_Students}
 
       <input type="text" placeholder="Enter student Name" ref={inputRef} /> <br/>
